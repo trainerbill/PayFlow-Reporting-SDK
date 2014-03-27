@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/trainerbill/PayPalPaymentsProLite.png?branch=master)](https://travis-ci.org/trainerbill/PayPalPaymentsProLite)
+[![Build Status](https://travis-ci.org/trainerbill/PayFlow-Reporting-SDK.svg?branch=master)](https://travis-ci.org/trainerbill/PayFlow-Reporting-SDK)
 PayFlow-Reporting-SDK
 =====================
 
