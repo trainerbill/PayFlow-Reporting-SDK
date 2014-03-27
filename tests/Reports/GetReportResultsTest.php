@@ -4,7 +4,7 @@ require_once(__DIR__.'/../../src/Reports/GetReportResults.php');
 require_once(__DIR__.'/../../src/Reports/CustomReport.php');
 use PayFlowReportingSDK\CustomReport\CustomReport;
 use PayFlowReportingSDK\GetReportResults;
-class GetReportMetaDataTest extends \PHPUnit_Framework_TestCase
+class GetReportResultsTest extends \PHPUnit_Framework_TestCase
 {
 	public function testObjectConstructionConfigIsArray()
 	{
