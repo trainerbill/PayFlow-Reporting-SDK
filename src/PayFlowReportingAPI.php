@@ -131,7 +131,7 @@ class PayFlowReportingAPI {
 		curl_setopt($ch, CURLOPT_URL,$this->call_endpoint);
 		curl_setopt($ch, CURLOPT_VERBOSE, 1);
 		curl_setopt ($ch, CURLOPT_POST, true);
-		curl_setopt ($ch, CURLOPT_POSTFIELDS, $this->call_query->saveXML());  //Set My query string
+		curl_setopt ($ch, CURLOPT_POSTFIELDS, $this->call_query->asXML());  //Set My query string
 		curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, false);
 		curl_setopt ($ch, CURLOPT_SSL_VERIFYHOST, false);
 		curl_setopt ($ch, CURLOPT_RETURNTRANSFER, true);
