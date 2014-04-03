@@ -25,6 +25,11 @@ class CustomReportTest extends \PHPUnit_Framework_TestCase
 		$report = new CustomReport(array('templateName' => 'OK','start_date' => 'March 3 2014'));
 	}
 	
+	public function testObjectDateCheck() {
+		$this->setExpectedException('Exception','PayFlowReportingSDK\CustomReport\CustomReport::__construct: StartDate is greater than EndDate');
+		$report = new CustomReport(array('templateName' => 'OK','start_date' => 'March 5 2014', 'end_date' => 'March 4 2014', 'pageSize'=>50));
+	}
+	
 	public function testObjectConstructionPageNumber() {
 		$this->setExpectedException('Exception','PayFlowReportingSDK\CustomReport\CustomReport::__construct: You must set pageSize in config');
 		$report = new CustomReport(array('templateName' => 'OK','start_date' => 'March 3 2014', 'end_date' => 'March 4 2014'));
